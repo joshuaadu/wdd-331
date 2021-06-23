@@ -1,0 +1,19 @@
+$card-width: 300px;
+$card-height: $card-width * 1.4;
+
+.card {
+    //   display: inline-block;
+    width: $card-width;
+    height: $card-height;
+    border: solid 0.5px gray;
+    border-radius: 5px;
+    background-image: url(data:image/svg+xml,%3Csvg%20width%3D%22100%22%20height%3D%22100%22%3E%3Csymbol%20id%3D%22a%22%3E%3Ccircle%20r%3D%2250%22%20cx%3D%2250%22%20cy%3D%2250%22%20fill%3D%22%23ff0%22%20stroke%3D%22green%22%2F%3E%3Cpath%20fill%3D%22red%22%20d%3D%22M15%2015h70v70H15z%22%2F%3E%3C%2Fsymbol%3E%3Cuse%20href%3D%22%23a%22%2F%3E%3C%2Fsvg%3E);
+
+}
+
+.rectangle {
+    fill: darkred;
+    stroke: black;
+    stroke-width: 5;
+    opacity: 0.5;
+}
