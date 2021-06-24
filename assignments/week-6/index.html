@@ -9,17 +9,29 @@
     <body>
         <h2>Welcome to Week 6</h2>
         <div class="card">
-            <svg width="100" height="100">
-                <symbol id="shape">
-                    <circle r="50" cx="50" cy="50" fill="yellow" stroke="green" stoke-width="2px"/>
-                    <rect x="15" y="15" width="70" height="70" fill="red"/>
-                </symbol>
-                <!-- <use href="#shape"></use> -->
+            <svg width="100%" height="100%">
+                <defs>
+                    <pattern
+                        id="adinkra"
+                        x="0"
+                        y="0"
+                        width="100"
+                        height="100"
+                        patternUnits="userSpaceOnUse"
+                    >
+                        <circle class="outer-circle" r="45" cx="50" cy="50" />
+                        <circle class="inner-circle" r="30" cx="50" cy="50" />
+                        <polygon
+                            class="inner-polygon"
+                            fill="yellow"
+                            points="30,30 50,50 70,30 70,70 50,50 30,70"
+                        />
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#adinkra)" />
             </svg>
         </div>
-        <div class="card">
-        </div>
-        
+        <div class="card background-pattern"></div>
 
         <script type="module" src="./main.js"></script>
     </body>
