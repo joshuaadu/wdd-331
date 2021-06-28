@@ -14,3 +14,17 @@
         @include offset($index);
     }
 }
+
+// //make cell classes
+// @for $index from $loop-start to $loop-end {
+//     .cell-#{$index} {
+//         @include cell($index);
+//     }
+// }
+
+// //make cell classes
+// @for $index from 1 to 3 {
+//     .numcell-#{$index} {
+//         @include numcell($index);
+//     }
+// }

@@ -4,11 +4,12 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Week 1</title>
+        <title>Week 7</title>
     </head>
     <body>
-        <h2>Week 7: Card Front part 1</h2>
-        <p><a href="card-back.html">See card back...</a></p>
+        <h2>W07 Assignment: Create a Grid Framework</h2>
+        <p><a href="index.html">See card front... </a></p>
+        <!-- SVG shapes for pips -->
         <svg
             style="position: absolute; width: 0; height: 0"
             width="0"
@@ -40,51 +41,51 @@
         <div class="card card-front">
             <div class="row">
                 <!-- this will be for the small pip in the top left corner with the number of the card -->
-                <div class="number cell numcell-1">
+                <div class="number cell col-1">
                     7
                     <svg class="icon">
                         <use xlink:href="#icon-clubs"></use>
                     </svg>
                 </div>
                 <!-- then 7 more pips for the body of the card -->
-                <div class="cell cell-1">
+                <div class="cell col-2">
                     <svg class="icon">
                         <use xlink:href="#icon-clubs"></use>
                     </svg>
                 </div>
-                <div class="cell cell-2">
+                <div class="cell col-2 offset-2">
                     <svg class="icon">
                         <use xlink:href="#icon-clubs"></use>
                     </svg>
                 </div>
 
-                <div class="cell cell-3">
+                <div class="cell col-8">
                     <svg class="icon">
                         <use xlink:href="#icon-clubs"></use>
                     </svg>
                 </div>
-                <div class="cell cell-4">
+                <div class="cell col-2 offset-1">
                     <svg class="icon rotate">
                         <use xlink:href="#icon-clubs"></use>
                     </svg>
                 </div>
-                <div class="cell cell-5">
+                <div class="cell col-2 offset-2">
                     <svg class="icon rotate">
                         <use xlink:href="#icon-clubs"></use>
                     </svg>
                 </div>
-                <div class="cell cell-6">
+                <div class="cell col-2 offset-1">
                     <svg class="icon rotate">
                         <use xlink:href="#icon-clubs"></use>
                     </svg>
                 </div>
-                <div class="cell cell-7">
+                <div class="cell col-2 offset-2">
                     <svg class="icon rotate">
                         <use xlink:href="#icon-clubs"></use>
                     </svg>
                 </div>
                 <!-- Then the number and pip for the bottom right...upside down -->
-                <div class="rotate number cell numcell-2">
+                <div class="rotate number cell col-1">
                     7
                     <svg class="icon">
                         <use xlink:href="#icon-clubs"></use>
