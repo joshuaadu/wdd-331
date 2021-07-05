@@ -1,5 +1,6 @@
 import './main.scss';
 
+<<<<<<< HEAD
 const changeHandler = function() {
     // Select unchecked radio buttons. Returns a NodeList.
     const notfave = document.querySelectorAll('input:not(:checked)');
@@ -20,3 +21,6 @@ const transitionendHandler = function(domEvent) {
 };
 
 document.addEventListener('transitionend', transitionendHandler);
+=======
+
+>>>>>>> 5066fc61782ae2f9b647e037b6696dd26c7c8490

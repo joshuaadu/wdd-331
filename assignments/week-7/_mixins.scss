@@ -7,3 +7,11 @@
 @mixin offset($offset-num) {
     margin-left: $one-column * $offset-num;
 }
+
+@mixin cell($span-num) {
+    grid-area: cell-#{$span-num};
+}
+
+@mixin numcell($span-num) {
+    grid-area: numcell-#{$span-num};
+}
