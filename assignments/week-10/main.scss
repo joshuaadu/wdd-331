@@ -1,0 +1,68 @@
+
+li {
+    transition: 500ms;
+}
+.fade {
+    opacity: 10%;
+}
+button {
+    font-size: 2em;
+    margin: 10px;
+    background-color: purple;
+    color: white;
+}
+button:active{
+    // animation: pulse 500ms infinite alternate-reverse;
+    animation: pulse 500ms infinite alternate-reverse;
+    // animation-fill-mode: both;
+}
+h1 {
+    // font-size: 50px;
+    color: brown;
+    transition: 5s;
+}
+h1:hover{
+    font-size: 1.2em;
+    color: blue;
+    animation: letter-spacing 500ms ease-in-out infinite alternate-reverse;
+}
+
+@keyframes letter-spacing {
+    from {
+        letter-spacing: normal;
+    }
+    
+    to {
+        letter-spacing: 0.5em;
+    }
+}
+
+
+@keyframes pulse {
+    from {
+        transform: scale(0.5);
+        opacity: .8;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+        background-color: orange;
+        color: green;
+    }
+}
+
+@keyframes wiggle {
+    25% {
+        transform: scale(.5) skewX(-5deg) rotate(-5deg);
+    }
+    50% {
+        transform: skewY(5deg) rotate(5deg);
+    }
+    75% {
+        transform: skewX(-5deg) rotate(-5deg) scale(1.5);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+ }
