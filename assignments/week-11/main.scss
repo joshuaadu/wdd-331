@@ -1,0 +1,14 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: row nowrap;
+    background: rgb(4, 36, 34);
+}
+
+.box {
+    flex: 1 1 auto;
+
+    // height: calc(100vw * 0.2);
+    background: rgb(17, 147, 170);
+}
