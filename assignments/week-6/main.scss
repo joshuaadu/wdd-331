@@ -31,4 +31,19 @@ $inner-polygon-fill: yellow;
 .background-pattern {
     background-color: #dfdbe5;
     background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2080%2080%22%20width%3D%2280%22%20height%3D%2280%22%3E%3Cpath%20fill%3D%22%23000%22%20d%3D%22M14%2016H9v-2h5V9.87a4%204%200%201%201%202%200V14h5v2h-5v15.95A10%2010%200%200%200%2023.66%2027l-3.46-2%208.2-2.2-2.9%205a12%2012%200%200%201-21%200l-2.89-5%208.2%202.2-3.47%202A10%2010%200%200%200%2014%2031.95V16zm40%2040h-5v-2h5v-4.13a4%204%200%201%201%202%200V54h5v2h-5v15.95A10%2010%200%200%200%2063.66%2067l-3.47-2%208.2-2.2-2.88%205a12%2012%200%200%201-21.02%200l-2.88-5%208.2%202.2-3.47%202A10%2010%200%200%200%2054%2071.95V56zm-39%206a2%202%200%201%201%200-4%202%202%200%200%201%200%204zm40-40a2%202%200%201%201%200-4%202%202%200%200%201%200%204zM15%208a2%202%200%201%200%200-4%202%202%200%200%200%200%204zm40%2040a2%202%200%201%200%200-4%202%202%200%200%200%200%204z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
+    transition: background 5s linear -2s, width 4s ease-out;
+
+}
+.background-pattern:active {
+    background: #0cf;
+    opacity: 50%;
+    width: 600px;
+}
+
+h2 {
+    transition: font-size 1s ease-in-out 0.5s, background 4s linear;
+}
+h2:hover {
+    font-size: 3em;
+    background: #50cf;
 }

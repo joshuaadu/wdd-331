@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .container {
     width: 100vw;
     height: 100vh;
@@ -12,3 +13,210 @@
     // height: calc(100vw * 0.2);
     background: rgb(17, 147, 170);
 }
+=======
+html,
+body {
+    height: 100%;
+}
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.container {
+    height: 25vmin;
+    width: 25vmin;
+    background-color: teal;
+}
+
+.container-one {
+    padding: 1vmin;
+}
+
+.container-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    animation: split-circle-right 3s linear infinite;
+    
+    // transform: translate(0, 100%);
+}
+.right {
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    animation: split-circle-left 3s linear infinite;
+}
+.orbiting-circle {
+    height: 25%;
+    width: 25%;
+    background-color: darkred;
+    border-radius: 50%;
+    animation: orbit 3s linear infinite;
+}
+
+.morphing-circle {
+    height: 25%;
+    width: 25%;	
+    background-color:darkred;	
+    border-radius: 50%;
+    animation: morphing-circle-square 2s linear infinite;
+    // transition: border-radius .5s ease, 
+    //             background-color .5s ease, 
+    //             transform .5s ease .5s;
+}	
+.splitting-circle {
+    height: 50px;
+    width: 25px;
+    background-color:darkred;
+}
+
+// .container-two:hover .morphing-circle {
+    //     border-radius: 0;
+    //     background-color:  white;
+    //     transform: rotate(90deg);
+    // }
+
+    @keyframes orbit {
+        0% { transform: translate(0,0); }
+        5% { transform: translate(0,0); } /* don't change for 5% of the time...pause */
+        25% { transform: translate(300%,0%); } /* start moving again */
+        30% { transform: translate(300%,0%); } /* pause */
+        50% { transform: translate(300%,300%); } /* move */
+        55% { transform: translate(300%,300%); }
+        75% { transform: translate(0%,300%); }
+        80% { transform: translate(0%,300%); }
+        100% { transform: translate(0%,0%); }
+    }
+
+    @keyframes morphing-circle-square {
+        0% {border-radius: 50%}
+        25% { /*(if you don't add both red and circle here it will start changing one or the other before you are ready) */
+            border-radius: 50%;
+            background-color: darkred;
+        }
+        50% { /* now change to white square...but don't start rotating yet! */
+        border-radius: 0%;
+        background-color: white;
+        transform: rotate(0deg);
+    }
+    75% { /* stay a white square, but rotate 90deg */
+        border-radius: 0%;
+        background-color: white;
+        transform: rotate(90deg);   
+    }
+    100% { /* stay rotated at 90, but change back to a circle */
+        border-radius: 50%;
+        background-color: darkred;
+        transform: rotate(90deg);
+    }
+}
+@keyframes split-circle-left {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(50%);
+    }
+    75% {
+        transform: translate(50%);
+    }
+}
+@keyframes split-circle-right {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(-50%);
+    }
+    75% {
+        transform: translate(-50%);
+    }
+}
+
+
+/* Slideout Menu styles */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+@mixin show {
+    transform: translate(0); 
+}
+@mixin rotate($deg) {
+    transform: rotate($deg);
+}
+
+.menu-icon {
+    margin: 10px;
+    transition: 1s;
+
+}
+.menu-icon:hover {
+    &.menu-icon span {
+        background: black;
+    }
+
+}
+.menu-icon span {
+    width: 45px;
+    background: grey;
+    height: 5px;
+    display: block;
+    margin-top: 5px;
+    border-radius: 20%;
+}
+
+.slide-menu{
+    position: absolute;
+    top: 0;
+    background: #111010;
+    width: 300px;
+    height: 100vh;
+    color: grey;
+    font-size: 1.3em;
+    transform: translate(-100%);
+    transition: transform 1s;
+}
+.slide-menu--list ul li {
+    list-style-type: none;
+    margin-bottom: 1em;
+}
+.slide-menu--icon  {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding: 5px;
+   
+}
+.slide-menu--icon i:hover, .slide-menu--list li:hover {
+    color: white;
+}
+.open {
+    @include show;
+}
+
+>>>>>>> e9ed5e54c24ade516b0bfa2cd9715d2562e34785

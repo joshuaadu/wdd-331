@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <title>Animated Slideout Menu</title>
+</head>
+<body style="display: block;">
+    <div class="menu-icon" id="menu-icon" onclick="toggleNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="slide-menu">
+        <div class="slide-menu--icon" onclick="toggleNav()">
+            <i class="fa fa-times-circle-o fa-3x" aria-hidden="true"></i>
+
+        </div>
+        <div class="slide-menu--list">
+            <ul>
+                <li>One</li>
+                <li>Two</li>
+                <li>Three</li>
+                <li>Four</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function toggleNav() {
+                
+            let updateElement = document.querySelector(".slide-menu");
+        //toggle adds a class if it's not there or removes it if it is.
+        updateElement.classList.toggle("open");
+        console.log(updateElement);
+        } 
+    </script>
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
