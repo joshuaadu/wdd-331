@@ -1,0 +1,34 @@
+.intro {
+<<<<<<< HEAD
+	@extend .p-40;
+	@include row();
+	font-family: $primary-font;
+=======
+    @extend .p-15;
+    @include row();
+    @include col(8);
+    font-family: $primary-font;
+>>>>>>> 5bc71e66f17eb46d1f33fd3375dcbb6d27353f70
+}
+
+header {
+	background: $primary-color;
+	color: red;
+	@extend .p-40;
+	@include center-text();
+	@include col($full-row);
+}
+
+.summary {
+	@extend .p-40;
+	@include col($half-row);
+	background: $primary-color;
+	color: $light;
+}
+
+.preamble {
+	@extend .p-40;
+	background: $secondary-color;
+	color: $dark;
+	@include col($half-row);
+}
