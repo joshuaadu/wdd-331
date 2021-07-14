@@ -1,3 +1,6 @@
+$fa-font-path:"../../node_modules/font-awesome/fonts";
+@import "node_modules/font-awesome/scss/font-awesome";
+
 .jumbotron {
     text-align: center;
     background: none;
@@ -36,4 +39,26 @@ h5.modal-title {
     margin-top: 15px;
     margin-bottom: 20px;
     width: 66%;
+}
+
+.footerImg {
+    padding: 15px;
+}
+
+.fa {
+    margin: 10px;
+}
+
+.fa-facebook-square{
+    color: #3b5998;
+}
+.fa-google-plus-square {
+    color: #c32f10;
+}
+.fa-instagram{
+    color: #fff;
+}
+
+.socialWrapper {
+    margin: auto;
 }
